@@ -1,4 +1,4 @@
-Creative Automation Pipeline
+# Creative Automation Pipeline
 
 This repository contains a proof-of-concept (POC) for automating creative asset generation for social ad campaigns.
 
@@ -9,7 +9,7 @@ Task 2 – Creative automation pipeline (code in this repo)
 Task 3 – AI-driven agent design and stakeholder communication (see Task3.png)
 
 
-# Project Structure
+## Project Structure
 
 adobe/
 │── pipeline.py          # main script
