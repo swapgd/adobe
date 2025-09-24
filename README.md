@@ -12,14 +12,14 @@ Task 3 – AI-driven agent design and stakeholder communication (see Task3.png)
 ## Project Structure
 
 adobe/
-│── pipeline.py          # main script
-│── requirements.txt     # dependencies
-│── brief.json           # example campaign brief
-│── Task1.png            # architecture & roadmap diagram
-│── Task3.png            # agent design diagram
-│── assets/
-│    └── input/          # input assets (logo, product images)
-│── outputs/             # generated creatives + logs
+- pipeline.py          # main script
+- requirements.txt     # dependencies
+- brief.json           # example campaign brief
+- Task1.png            # architecture & roadmap diagram
+- Task3.png            # agent design diagram
+- assets/
+    -  input/          # input assets (logo, product images)
+- outputs/             # generated creatives + logs
 
 ## Setup
 
