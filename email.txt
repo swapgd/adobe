@@ -1,0 +1,32 @@
+Subject: Update on Social Ad Campaign Automation - Temporay delay in Asset Delivery
+
+
+Dear Jon Doe,
+
+I wanted to inform you of a short delay in the creative asset delivery for your upcoming campaign.
+
+What’s Happening:
+
+- Our automation system is currently experiencing a provisioning delay with the GenAI API licensing.
+- As a result, generation of some creative variants is running slower than expected.
+
+Impact:
+
+- A subset of campaign assets may be delivered later than the originally scheduled timeline.
+- Most assets are unaffected and remain on track, so your team can begin using those immediately.
+
+Next Steps
+
+- We are actively working with the provider to resolve the licensing issue.
+- We will queued all pending generation tasks so they will process automatically once access is restored.
+
+We expect the outstanding assets to be ready within the next 10-12 hours.
+
+Completed assets have passed all brand and compliance checks.
+We will continue to keep you updated until the campaign set is fully ready.
+
+Thank you for your patience and understanding as we address this dependency. 
+Please let me know if you have any concern or suggestion, happy to get on call and discuss in detail.
+
+Best,
+Swapnil
