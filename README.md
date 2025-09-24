@@ -54,3 +54,7 @@ The script will:
   "audience": "Students",
   "message": "Big Spring Discounts - Shop Now!"
 }
+
+
+## Email to customer:
+    email.txt
