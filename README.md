@@ -1,20 +1,56 @@
-# Creative Automation Pipeline (POC)
+Creative Automation Pipeline
 
-This proof-of-concept automates creative asset generation for social ad campaigns using **OpenAI Images API**, with **brand compliance checks, legal guardrails, and reporting**.
+This repository contains a proof-of-concept (POC) for automating creative asset generation for social ad campaigns.
 
-## Features
-- Reads campaign briefs (`brief.json`).
-- Uses existing assets if available, otherwise generates new ones with OpenAI.
-- Produces creatives in **3 aspect ratios**
-- Overlays campaign messages on assets.
-- Adds brand logo and verifies brand colors.
-- Runs legal content checks (flags prohibited words).
-- Logs all results (PASS/FAIL/ERROR) to `outputs/pipeline_log.csv`.
+Task 1 – High-level architecture and roadmap (see Task1.png)
+
+Task 2 – Creative automation pipeline (code in this repo)
+
+Task 3 – AI-driven agent design and stakeholder communication (see Task3.png)
+
+
+# Project Structure
+
+adobe/
+│── pipeline.py          # main script
+│── requirements.txt     # dependencies
+│── brief.json           # example campaign brief
+│── Task1.png            # architecture & roadmap diagram
+│── Task3.png            # agent design diagram
+│── assets/
+│    └── input/          # input assets (logo, product images)
+│── outputs/             # generated creatives + logs
 
 ## Setup
-1. Clone this repo
-2. `cd adobe`
-3. export OPENAI_API_KEY="Your OpenAI API Key"
-4. Install dependencies:
-   pip install -r requirements.txt
-5. python pipeline.py
+
+`pip3 install -r requirements.txt`
+
+## Minimal requirements:
+    Pillow
+    requests
+    openai
+
+`export OPENAI_API_KEY="your_api_key_here"`
+
+## Running the Pipeline
+`python3 pipeline.py`
+
+
+The script will:
+
+- Read brief.json (campaign metadata).
+- Use existing assets from assets/input/ or call the OpenAI Images API to generate new ones.
+- Produce creatives in 3 aspect ratios (1:1, 9:16, 16:9).
+- Overlay campaign message + add brand logo.
+- Run compliance checks (brand color, prohibited words).
+- Save outputs under outputs/<campaign>/<product>/<ratio>/.
+- Log results to outputs/pipeline_log.csv.
+
+## Sample Input - brief.json
+{
+  "campaign_name": "Spring Sale 2025",
+  "products": ["Laptop", "Headphones"],
+  "region": "US",
+  "audience": "Students",
+  "message": "Big Spring Discounts - Shop Now!"
+}
